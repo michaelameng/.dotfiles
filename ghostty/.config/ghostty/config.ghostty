@@ -9,7 +9,6 @@ font-style-italic = false
 font-style-bold-italic = false
 
 # Theme
-theme = TokyoNight Night
 palette = 0=#15161e
 palette = 1=#f7768e
 palette = 2=#9ece6a
