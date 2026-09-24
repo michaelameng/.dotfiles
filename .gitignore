@@ -1,3 +1,12 @@
+# .DS_Store...
 **/.DS_Store
+
+# Ignore Stardew Valley logs
 config/.config/StardewValley
+
+# Ignore Raycast token
 config/.config/raycast/aster-endpoint.json
+
+# Ignore extra Karabiner files
+config/.config/karabiner/assets
+config/.config/karabiner/automatic_backups
