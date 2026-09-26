@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 set -euo pipefail
 
-# Hide unused unused directories in `~`
+# Hide unused directories in `~`
 chflags hidden ~/Pictures ~/Music ~/Movies
 
 # Unhide the `~/Library` directory
@@ -17,10 +17,10 @@ defaults write com.apple.dock autohide -bool true
 defaults write -g ApplePressAndHoldEnabled -bool false
 
 # Set key-repeat speed to quickest
-defaults write NSGGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 # Lower delay before keys repeat
-defaults write NSGGlobalDomain InitialKeyRepeat -int 12
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Always keep folders on top in Finder
 defaults write com.apple.finder _FXSortFoldersFirst -bool true
@@ -41,7 +41,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Decrease Dock size
 defaults write com.apple.dock tilesize -int 45
 
-# Enable trackpack tap-to-click
+# Enable trackpad tap-to-click
 defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # Set the interface theme to "Dark" (need to update Icons separately)
