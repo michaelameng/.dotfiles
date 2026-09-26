@@ -17,3 +17,10 @@ brew autoupdate start --upgrade --immediate --cleanup
 if [[ -z "$(crontab -l 2>/dev/null || true)" ]]; then
   echo "0 0 * * 0 /opt/homebrew/bin/brew bundle dump --file=~/.dotfiles/config/Brewfile --force > /dev/null 2>&1" | crontab -
 fi
+
+# Update `tlmgr` from `basictex`
+eval "$(/usr/libexec/path_helper)"
+sudo tlmgr update --self
+
+# Install `latexmk` with `tlmgr`
+sudo tlmgr install latexmk
