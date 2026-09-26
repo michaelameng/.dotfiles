@@ -7,7 +7,4 @@ eval "$(zoxide init --cmd cd zsh)"
 alias ~="cd ~"
 alias ..="cd .."
 
-alias nv="nvim"
 alias ssh="TERM=xterm-256color ssh"
-
-alias cc="claude"
