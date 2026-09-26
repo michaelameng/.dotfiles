@@ -1,4 +1,5 @@
 #!/usr/bin/env zsh
+set -euo pipefail
 
 # Symlink `.config`
 rm -rf ~/.config
