@@ -15,7 +15,7 @@ brew autoupdate start --upgrade --immediate --cleanup
 
 # Update the `Brewfile` once a week (need to give `cron` Full-Disk Access)
 if [[ -z "$(crontab -l 2>/dev/null || true)" ]]; then
-  echo "0 0 * * 0 /opt/homebrew/bin/brew bundle dump --file=~/.dotfiles/config/Brewfile --force > /dev/null 2>&1" | crontab -
+  echo "0 0 * * 0 /opt/homebrew/bin/brew bundle dump --file=~/.dotfiles/config/Brewfile --force --no-vscode > /dev/null 2>&1" | crontab -
 fi
 
 # Update `tlmgr` from `basictex`
